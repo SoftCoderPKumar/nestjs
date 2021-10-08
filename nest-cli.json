@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/anchor-point/src",
+  "monorepo": true,
+  "root": "apps/anchor-point",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/anchor-point/tsconfig.app.json"
+  },
+  "projects": {
+    "anchor-point": {
+      "type": "application",
+      "root": "apps/anchor-point",
+      "entryFile": "main",
+      "sourceRoot": "apps/anchor-point/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/anchor-point/tsconfig.app.json"
+      }
+    },
+    "notification": {
+      "type": "application",
+      "root": "apps/notification",
+      "entryFile": "main",
+      "sourceRoot": "apps/notification/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/notification/tsconfig.app.json"
+      }
+    }
+  }
+}
